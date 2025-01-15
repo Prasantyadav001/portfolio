@@ -1,0 +1,294 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	font-family:'Nunito', sans-serif;
+}
+
+body{ 
+	background-image:linear-gradient(to right bottom,skyblue,red);	
+}
+
+header{
+	top:0;
+	height:14vh;
+	width:100%;
+	z-index:12;
+	position:fixed;
+	background-color:#191970;
+}
+
+header > nav{
+	max-width:1920px;
+	height:100%;
+	margin:0 auto;
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	color:white;
+}
+
+#name{
+	height:10vh;
+	margin-left:12vh;
+	margin-top:4vh;
+	font-size:48px;
+	align-items:center;
+}
+
+header > nav > ul{
+	list-style:none;
+	display:flex;
+	font-size:35px;
+	column-gap:45px;
+	margin-right:22vh;
+}
+
+#top{
+	margin-left: 8%;
+    margin-top: 350px;
+}
+
+#top h1{
+    font-size: 70px;
+    margin-bottom: 20px;
+}
+
+#top p{
+	font-size:20px;
+    line-height: 22px;
+}
+
+#images{
+	margin-top: -115px;
+    width: 45%;
+    height: 60%;
+    position: absolute;
+    right: 100px;
+}
+
+#images img{
+    height: 100%;
+    position: absolute;
+    left: 50%;
+
+  border-radius: 50%;
+    transform: translateX(-40%);
+}
+
+#social{
+    margin-left: 8%;
+    margin-top: 50px;
+}
+
+#social a{
+    font-size: 30px;
+    color: #212121;
+    margin-right: 22px;
+}
+
+header > nav > ul > li:hover{
+	color:red;
+}
+
+header > nav > ul > li{
+	transition: all 0.2s;
+}
+
+#about{
+	margin-top:350px;
+}
+
+#image{
+	margin-top:20px;
+    width: 45%;
+    height: 60%;
+    position: absolute;
+	left: 100px;
+}
+
+#image img{
+    height: 70%;
+    position: absolute;
+    right: 50%;
+	border-radius: 50%;
+	transform: translateX(20%);
+}
+
+#about h1{
+	margin-left:800px;
+	font-size: 70px;
+	padding-top:40px;
+    margin-bottom: 20px;
+}
+
+#about h2{
+	margin-left:800px;
+	font-size: 45px;
+    margin-bottom: 20px;
+}
+
+#about p{
+	margin-left:800px;
+	font-size:20px;
+    line-height: 22px;
+	padding-right:80px;
+}
+
+#myskill{
+	min-height:90vh;
+	background:#111;
+	margin-top:200px;
+	margin-bottom:100px;
+}
+#ts h1{
+	font-size:70px;
+    margin-bottom:150px;
+	margin-left:37%;
+	color:white;
+	padding-top:50px;
+}
+
+#ts{
+  display:right;
+  align-items:center;
+  justify-content:center;
+  margin-left:150px;
+}
+
+
+.skills{
+  width:100%;
+  max-width:600px;
+  padding:0 20px;
+}
+
+.skill-name{
+  font-size:18px;
+  font-weight:700;
+  color:#f1f1f1;
+  text-transform:uppercase;
+  margin:20px 0;
+}
+
+.skill-bar{
+  height:14px;
+  background:#282828;
+  border-radius:3px;
+}
+
+.skill-per{
+  height:14px;
+  background:#d13639;
+  border-radius:3px;
+  position:relative;
+  animation:fillBars 2.5s 1;
+}
+
+.skill-per::before{
+  content:attr(per);
+  position:absolute;
+  padding:4px 6px;
+  background:#f1f1f1;
+  border-radius:4px;
+  font-size:12px;
+  top:-35px;
+  right:0;
+  transform:translateX(50%);
+}
+
+.skill-per::after{
+  content: "";
+  position:absolute;
+  width:10px;
+  height:10px;
+  background:#f1f1f1;
+  top:-20px;
+  right:0;
+  transform:translateX(50%) rotate(45deg);
+  border-radius:2px;
+}
+
+@keyframes fillBars{
+  from{
+    width:0;
+  }
+  to{
+    width:100%;
+  }
+}
+
+
+ 
+.contact h1{
+    text-align:center;
+	font-size:70px;
+    padding-bottom:30px;
+    border-bottom: 2px solid #fff4;
+   
+}
+
+
+.contact .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contact .row .content{
+    flex:1 1 30px;
+    padding:35px;
+}
+
+
+.contact .row form{
+    flex:1 1 700px;
+    padding:32px;
+    margin:32px;
+    margin-bottom:40px;
+}
+
+.contact .row form .box{
+    padding:25px;
+    margin:15px;
+    background:#3333;
+    font-size:25px;
+    width:100%;
+}
+
+.contact .row form .message{
+    height:250px;
+}
+
+.contact .row .content .title{
+    text-transform: uppercase;
+    color:#fff;
+    font-size:50px;
+    padding-bottom:30px;
+}
+
+
+.contact .row .content .info h3{
+    display:flex;
+    align-items:center;
+    font-size:30px;
+    color:#eee;
+    padding:16px;
+    font-weight:normal;
+}
+
+.contact .row .content .info h3 i{
+    padding-right:16px;
+}
+
+
+.btn{
+    padding:10px 30px;
+    background:#333;
+    color:#fff;
+    cursor:pointer;
+    margin-top:5px;
+    font-size:30px;
+    border-radius:50px;
+}
